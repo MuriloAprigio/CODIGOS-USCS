@@ -1,52 +1,22 @@
-# Prerequisites
-*.d
+/******************************************************************************
+Murilo Aprigio Sant'ana AED2 08/08/2022
+código salário mensal
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+*******************************************************************************/
+#include <stdio.h>
 
-# Linker output
-*.ilk
-*.map
-*.exp
+int main(){
 
-# Precompiled Headers
-*.gch
-*.pch
+ float salmensal, salhora, qtdehoras;
+ 
+ printf("entre com o salario mensal: ");
+ scanf("%f", &salhora);
+ printf("entre com a quantidade de horas: ");
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+  scanf("%f", &qtdehoras);
+  
+  salmensal = salhora * qtdehoras;
+  printf("%f", salmensal);
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+    return 0;
+}
